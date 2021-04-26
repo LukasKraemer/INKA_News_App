@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="de.lukaskraemer.inkadigiman.ui.calender.CalendarFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.applandeo.materialcalendarview.CalendarView>
+
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_frag"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/margin_frag"
+
+            app:layout_constraintBottom_toTopOf="@+id/showtask_rv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:id="@+id/table_row1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Appointment_type"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/date"
+                    android:textAlignment="viewEnd"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/time"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_frag"
+            android:layout_marginRight="@dimen/margin_frag"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/table_layout"
+            tools:listitem="@layout/item_appointment" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">INKA News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Termine und Anfragen</string>
+    <string name="nav_header_subtitle">kontakt@lukas-kraemer.de</string>
+    <string name="nav_header_desc">Navigation</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <!-- main menue -->
+    <string name="show_task">Alle Termine zeigen</string>
+    <string name="create_task">Aufgaben</string>
+    <string name="calendar">Kalender</string>
+    <string name="settings">Einstellungen</string>
+    <string name="homepage">Zu unserer Webseite</string>
+
+    <!--Settingsflag-->
+    <string name="noemailset">keine E-Mail Adresse gesetzt</string>
+    <string name="notpwdset">kein Password gesetzt</string>
+    <string name="notokenset">kein Token gesetzt"</string>
+    <string name="noipset">keine IP Adresse gesetzt</string>
+    <string name="wrongvalue">%s könnte falsch sein</string>
+
+    <!-- Notification -->
+    <string name="namen_notification">Terminerinnerung</string>
+
+    <!-- Main Acitivty -->
+    <string name="subject_mail">Nutzeranfrage</string>
+    <string name="email_client_choose">Wählen Sie bitte Ihren E-Mail Client :</string>
+
+    <!-- add task fragemtn-->
+    <string name="Appointment_type">Art</string>
+    <string name="note">Notiz</string>
+    <string name="Note_here">Notiz hier</string>
+    <string name="save">Speichern</string>
+
+    <!-- Show task fragement -->
+    <string name="event_type">Terminart</string>
+    <string name="date">Datum</string>
+    <string name="time">Uhrzeit</string>
+    <string name="restore_message">Warnung - Termin wird wiederhergestellt</string>
+    <string name="restored">wiederhergestellt</string>
+    <string name="deleted_message">Warning - Eintrag wird unwiederruflich gelöscht</string>
+    <string name="deleted_message_temp">Warning - Eintrag wird gelöscht</string>
+    <string name="deleted">gelöscht"</string>
+    <string name="nonotice">Keine Notiz</string>
+    <string name="alldeleted">Alle Gelöschten</string>
+
+
+    <string name="alltaskinDB">Aufgabe in Datenbank eingefügt</string>
+    <string name="alltaskinDBupdated">Aufabe wurde in Datenbank aktualisiert</string>
+
+    <!-- Settings -->
+    <string name="Login">Anmeldung</string>
+    <string name="email">E-Mail Adresse</string>
+    <string name="password">Passwort</string>
+    <string name="notification">Benachrichtigung</string>
+    <string name="mail_notification">Benachrichtigung per Email</string>
+    <string name="push_notification">Push Benachrichtigung</string>
+    <string name="hour">Stunde</string>
+    <string name="Minutes">Minuten</string>
+    <string name="expand">Erweitert</string>
+    <string name="at">um</string>
+    <string name="desc_logo">Aufgaben Logo</string>
+    <string name="abort">Abbrechen</string>
+
+
+    <string name="createAppointment">Termin erstellen</string>
+    <string name="changeAppointment">Termin bearbeiten</string>
+</resources>

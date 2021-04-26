@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="time_data">
+        <item>0: 00 Uhr</item>
+        <item>1: 00 Uhr</item>
+        <item>2: 00 Uhr</item>
+        <item>3: 00 Uhr</item>
+        <item>4: 00 Uhr</item>
+        <item>5: 00 Uhr</item>
+        <item>6: 00 Uhr</item>
+        <item>7: 00 Uhr</item>
+        <item>8: 00 Uhr</item>
+        <item>9: 00 Uhr</item>
+        <item>10: 00 Uhr</item>
+        <item>11: 00 Uhr</item>
+        <item>12: 00 Uhr</item>
+        <item>13: 00 Uhr</item>
+        <item>14: 00 Uhr</item>
+        <item>15: 00 Uhr</item>
+        <item>16: 00 Uhr</item>
+        <item>17: 00 Uhr</item>
+        <item>18: 00 Uhr</item>
+        <item>19: 00 Uhr</item>
+        <item>20: 00 Uhr</item>
+        <item>21: 00 Uhr</item>
+        <item>22: 00 Uhr</item>
+        <item>23: 00 Uhr</item>
+    </array>
+
+    <array name="time_label">
+        <item>0: 00 Uhr</item>
+        <item>1: 00 Uhr</item>
+        <item>2: 00 Uhr</item>
+        <item>3: 00 Uhr</item>
+        <item>4: 00 Uhr</item>
+        <item>5: 00 Uhr</item>
+        <item>6: 00 Uhr</item>
+        <item>7: 00 Uhr</item>
+        <item>8: 00 Uhr</item>
+        <item>9: 00 Uhr</item>
+        <item>10: 00 Uhr</item>
+        <item>11: 00 Uhr</item>
+        <item>12: 00 Uhr</item>
+        <item>13: 00 Uhr</item>
+        <item>14: 00 Uhr</item>
+        <item>15: 00 Uhr</item>
+        <item>16: 00 Uhr</item>
+        <item>17: 00 Uhr</item>
+        <item>18: 00 Uhr</item>
+        <item>19: 00 Uhr</item>
+        <item>20: 00 Uhr</item>
+        <item>21: 00 Uhr</item>
+        <item>22: 00 Uhr</item>
+        <item>23: 00 Uhr</item>
+    </array>
+    <array name="minutes">
+        <item>Volle Stunde</item>
+        <item>viertel nach</item>
+        <item>halb</item>
+        <item>Dreiviertel</item>
+    </array>
+
+    <array name="minutesdata">
+        <item>0min</item>
+        <item>15min</item>
+        <item>30min</item>
+        <item>45min</item>
+    </array>
+    <array name="kindoftask">
+        <item>Schulung</item>
+        <item>Klassenarbeit</item>
+        <item>Test</item>
+        <item>Präsentation</item>
+        <item>Kundenbesuch</item>
+        <item>Sonstiges</item>
+
+    </array>
+    <array name="kindoftask2">
+        <item>schooling</item>
+        <item>class work</item>
+        <item>test</item>
+        <item>presentation</item>
+        <item>customer visit</item>
+        <item>others</item>
+    </array>
+
+</resources>

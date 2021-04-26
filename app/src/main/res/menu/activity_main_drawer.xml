@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_showtask"
+            android:icon="@drawable/ic_baseline_format_list_numbered_rtl_24"
+            android:title="@string/show_task" />
+        <!--
+                <item
+                    android:id="@+id/nav_add_task"
+                    android:icon="@drawable/ic_baseline_table_view_24"
+                    android:title="@string/create_task" />
+
+                    -->
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="@string/calendar" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_add_hidden"
+            android:icon="@drawable/ic_baseline_table_view_24"
+            android:title="@string/alldeleted" />
+        <item
+            android:id="@+id/nav_di_coding"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="@string/homepage" />
+
+
+    </group>
+</menu>

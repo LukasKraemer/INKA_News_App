@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_showtask">
+
+    <fragment
+        android:id="@+id/nav_showtask"
+        android:name="de.lukaskraemer.inkadigiman.ui.task.ShowtaskFragment"
+        android:label="@string/show_task"
+        tools:layout="@layout/fragment_showtask" />
+
+    <fragment
+        android:id="@+id/nav_add_task"
+        android:name="de.lukaskraemer.inkadigiman.ui.add_task.AddTaskFragement"
+        android:label="@string/create_task"
+        tools:layout="@layout/fragment_add_task" />
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="de.lukaskraemer.inkadigiman.ui.calender.CalendarFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/nav_add_hidden"
+        android:name="de.lukaskraemer.inkadigiman.ui.allHiddenTask.AllHiddenFragement"
+        android:label="Alle versteckten"
+        tools:layout="@layout/fragment_all_hidden" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="de.lukaskraemer.inkadigiman.ui.settings.Settings"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <activity
+        android:id="@+id/nav_di_coding"
+        app:action="android.intent.action.VIEW"
+        app:data="https://di-coding.de" />
+
+</navigation>

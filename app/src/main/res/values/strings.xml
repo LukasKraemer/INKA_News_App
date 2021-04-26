@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">INKA News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Appointments and inquiries</string>
+    <string name="nav_header_subtitle">kontakt@lukas-kraemer.de</string>
+    <string name="nav_header_desc">Navigation</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings">Settings</string>
+
+    <!-- main menue -->
+    <string name="show_task">Show all Task</string>
+    <string name="create_task">Create Task</string>
+    <string name="calendar">Calendar</string>
+    <string name="homepage">To our Site</string>
+
+    <!--Settingsflag-->
+    <string name="noemailset">no e-mail address set</string>
+    <string name="notpwdset">no password set</string>
+    <string name="notokenset">no token set</string>
+    <string name="noipset">no IP set</string>
+    <string name="wrongvalue">%s könnte falsch sein</string>
+
+    <!--Notification -->
+    <string name="namen_notification">Appointment reminder</string>
+
+    <!-- Main Acitivty -->
+    <string name="subject_mail">User request</string>
+    <string name="email_client_choose">Choose an Email client :</string>
+
+    <!-- add task fragemtn-->
+    <string name="Appointment_type">Type</string>
+    <string name="note">Note</string>
+    <string name="Note_here">Note here</string>
+    <string name="save">Save</string>
+
+    <!-- Show task fragement -->
+    <string name="event_type">Event type</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
+
+    <!-- Settings -->
+    <string name="Login">Login</string>
+    <string name="email">E-Mail address</string>
+    <string name="password">Password</string>
+    <string name="notification">Notification</string>
+    <string name="mail_notification">Mail notification</string>
+    <string name="push_notification">Push notification</string>
+    <string name="hour">hour</string>
+    <string name="Minutes">minutes</string>
+    <string name="expand">expand</string>
+
+    <string name="desc_logo">task Icon</string>
+
+    <string name="ipDefault" translatable="false">lukaskraemer.ddns.net</string>
+    <string name="abort">Abort</string>
+    <string name="restore_message">Warning - Entry will be restore!</string>
+    <string name="restored">restored</string>
+    <string name="deleted_message">Warning - Entry will be deleted permanently</string>
+    <string name="deleted_message_temp">Warning - Entry will be deleted</string>
+    <string name="deleted">deleted"</string>
+    <string name="nonotice">No Notice</string>
+    <string name="alldeleted">all removed appointments</string>
+    <string name="at">at</string>
+
+    <string name="alltaskinDB">Task inserted in Database</string>
+    <string name="alltaskinDBupdated">Task updated in Database</string>
+
+
+    <string name="createAppointment">Create Appointment</string>
+    <string name="changeAppointment">Change Appointment</string>
+</resources>
