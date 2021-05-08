@@ -13,7 +13,7 @@ import de.lukaskraemer.inkadigiman.R
 import de.lukaskraemer.inkadigiman.data.database.Task
 import de.lukaskraemer.inkadigiman.data.repository.AppRepository
 import kotlinx.coroutines.runBlocking
-import java.util.*
+import java.util.Calendar
 import kotlin.collections.ArrayList
 
 

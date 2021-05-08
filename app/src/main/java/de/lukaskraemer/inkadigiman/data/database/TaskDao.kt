@@ -3,7 +3,6 @@ package de.lukaskraemer.inkadigiman.data.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import java.util.*
 
 @Dao
 interface TaskDao
@@ -38,5 +37,11 @@ interface TaskDao
 
     @Query("select * from Task where show =1")
     fun dates():LiveData<List<Task>>
+
+    @Query("DELETE FROM Task WHERE (time <= :start)")
+    suspend fun databaseCleaner(start: Long)
+
+
+
 }
 

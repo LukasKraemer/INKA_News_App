@@ -2,10 +2,10 @@ package de.lukaskraemer.inkadigiman
 
 
 import android.app.AlarmManager
+import android.app.Application
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.icu.util.Calendar
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
@@ -22,9 +22,8 @@ import com.google.android.material.navigation.NavigationView
 import de.lukaskraemer.inkadigiman.alarm.AlarmReceiver
 import de.lukaskraemer.inkadigiman.data.repository.AppRepository
 import de.lukaskraemer.inkadigiman.ui.updateValues.Dialog
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
+import java.util.Calendar
 
 
 class MainActivity : AppCompatActivity() {
@@ -74,6 +73,8 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         alarmananager()
+        val context: Context = this.applicationContext
+        databaseCleaner(context)
 
     }
 
@@ -149,6 +150,17 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-
+    private fun databaseCleaner(context: Context){
+        val sharedPreference = PreferenceManager.getDefaultSharedPreferences(context)
+        if(sharedPreference.getBoolean("appointmentDelete", false)){
+            val days =sharedPreference.getString("appointmentDeleteAfter", "5")!!.toInt()
+            val calender= Calendar.getInstance()
+            calender.set(Calendar.DAY_OF_YEAR, calender.get(Calendar.DAY_OF_YEAR)-days)
+            calender.set(Calendar.MILLISECOND, 0)
+            calender.set(Calendar.HOUR, 0)
+            calender.set(Calendar.MINUTE,0)
+            runBlocking { AppRepository(context.applicationContext as Application).databaseCleaner(calender) }
+        }
+    }
 }
 

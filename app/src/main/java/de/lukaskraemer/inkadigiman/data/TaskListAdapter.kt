@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import de.lukaskraemer.inkadigiman.R
 import de.lukaskraemer.inkadigiman.data.database.Task
-import java.util.*
+import java.util.Calendar
 import kotlin.collections.ArrayList
 
 

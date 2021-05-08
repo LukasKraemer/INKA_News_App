@@ -7,17 +7,18 @@ import android.text.TextUtils
 import androidx.preference.*
 import de.lukaskraemer.inkadigiman.R
 import de.lukaskraemer.inkadigiman.data.DataValidator
-import kotlin.math.absoluteValue
 
 class Settings: PreferenceFragmentCompat() {
     //userdata
     private var preusername: EditTextPreference? = null
     private var prepassword: EditTextPreference? = null
+    private var preappointmentDeleteAfter: EditTextPreference? = null
 
     private var premail: SwitchPreference? = null
     private var prepushup: SwitchPreference? = null
     private var prepushuptime: ListPreference? = null
     private var prepushuptimemin: ListPreference? = null
+    private var preappointmentDelete: SwitchPreference? = null
 
     private var preip: EditTextPreference? = null
     private var pretoken: EditTextPreference? = null
@@ -36,6 +37,8 @@ class Settings: PreferenceFragmentCompat() {
     private var ip = ""
     private var token = ""
     private var ssl = false
+    private var appointmentDelete = false
+    private var appointmentDeleteAfter = ""
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
 
@@ -50,6 +53,8 @@ class Settings: PreferenceFragmentCompat() {
         preip = findPreference("ip")
         pretoken = findPreference("token")
         pressl = findPreference("ssl")
+        preappointmentDelete= findPreference("appointmentDelete")
+        preappointmentDeleteAfter = findPreference("appointmentDeleteAfter")
 
 
 
@@ -126,6 +131,14 @@ class Settings: PreferenceFragmentCompat() {
             } else {
                 "*".repeat(text.length)
             }
+        }
+        preappointmentDeleteAfter?.summaryProvider = Preference.SummaryProvider<EditTextPreference> { preference ->
+            val text = preference.text
+            if (TextUtils.isEmpty(text)) {
+                ""
+            } else {
+               text
+            }
 
         }
     }
@@ -145,8 +158,8 @@ class Settings: PreferenceFragmentCompat() {
         ip = sharedPreference.getString("ip", "")!!
         token = sharedPreference.getString("username", "")!!
         ssl = sharedPreference.getBoolean("ssl", true)
-
-
+        appointmentDelete = sharedPreference.getBoolean("appointmentDelete", false)
+        appointmentDeleteAfter = sharedPreference.getString("appointmentDeleteAfter", "5")!!
     }
 
 }

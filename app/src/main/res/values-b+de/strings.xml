@@ -72,4 +72,8 @@
     <string name="Notification_Appointment_type">Typ: %s</string>
     <string name="Notification_date">Datum: %1$d.%2$d.%3$d</string>
     <string name="Notification_time">Uhrzeit: %d : %d Uhr</string>
+
+    <string name="appointment">Termin Datenbank</string>/
+    <string name="oldAppointmentdelete">Alte Termine löschen?</string>
+    <string name="deleteAfterDay">Alte Termine löschen nach x Tagen</string>
 </resources>

@@ -44,13 +44,10 @@ class NotificationActivity : AppCompatActivity() {
      btn = findViewById(R.id.notification_btn)
      context=this.applicationContext
 
-     onNewIntent(intent);
+     onNewIntent(intent)
 
      btn.setOnClickListener {
          startActivity(Intent(this, MainActivity::class.java))
-
      }
  }
-
-
 }

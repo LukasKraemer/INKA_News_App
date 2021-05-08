@@ -2,9 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:visibility="visible"
     tools:visibility="visible" >
-    <PreferenceCategory android:title="@string/Login">
-
-    </PreferenceCategory>
     <EditTextPreference
         android:icon="@drawable/ic_baseline_lock_24"
         android:key="username"
@@ -46,8 +43,20 @@
         android:icon="@drawable/ic_baseline_timer_24"
         android:key="pushupmin"
         android:title="@string/Minutes" />
-    <PreferenceCategory android:title="@string/expand">
+    <PreferenceCategory android:title="@string/appointment">
 
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="appointmentDelete"
+            android:title="@string/oldAppointmentdelete" />
+        <EditTextPreference
+            android:key="appointmentDeleteAfter"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/deleteAfterDay" />
+        <PreferenceCategory android:title="@string/Login">
+
+        </PreferenceCategory>
         <SwitchPreference
             android:defaultValue="false"
             android:icon="@drawable/ic_baseline_security_24"

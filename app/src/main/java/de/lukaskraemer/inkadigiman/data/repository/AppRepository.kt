@@ -8,7 +8,7 @@ import de.lukaskraemer.inkadigiman.data.database.TaskDao
 import de.lukaskraemer.inkadigiman.data.database.TaskDataBase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import java.util.*
+import java.util.Calendar
 
 class AppRepository(application: Application) {
     private val taskDao: TaskDao
@@ -76,6 +76,13 @@ class AppRepository(application: Application) {
         }
         return task
     }
+    suspend fun databaseCleaner(time: Calendar) {
+        withContext(Dispatchers.IO)
+        {
+            taskDao.databaseCleaner(time.timeInMillis)
+        }
+    }
+
 
     fun getLiveHiddenDataTask(): LiveData<List<Task>> {
         return taskDao.getLiveHiddenDataTaskList()
@@ -110,9 +117,6 @@ class AppRepository(application: Application) {
 
 
     fun getLiveDataTask(): LiveData<List<Task>> {
-        return taskDao.getLiveDataTaskList()
-    }
-    fun getLiveDataTaskbyId(): LiveData<List<Task>> {
         return taskDao.getLiveDataTaskList()
     }
 
