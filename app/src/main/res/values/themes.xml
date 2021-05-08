@@ -12,18 +12,20 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="abbreviationsBarColor">@color/mygreen_darker</item>
-        <item name="anotherMonthsDaysLabelsColor">#8B0000</item>
-        <item name="headerColor">@color/mygreen</item>
-    </style>
 
-    <style name="Theme.INKADIGIMAN.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+         <item name="abbreviationsBarColor">@color/mygreen_darker</item>
+         <item name="anotherMonthsDaysLabelsColor">#8B0000</item>
+         <item name="headerColor">@color/mygreen</item>
 
-    <style name="Theme.INKADIGIMAN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+     </style>
 
-    <style name="Theme.INKADIGIMAN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+     <style name="Theme.INKADIGIMAN.NoActionBar">
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+     </style>
 
-</resources>
+     <style name="Theme.INKADIGIMAN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+     <style name="Theme.INKADIGIMAN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+ </resources>

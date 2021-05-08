@@ -39,8 +39,10 @@ class TaskListAdapter(var content: ArrayList<Task>) :
         timer.timeInMillis = task.time
         holder.itemType.text =
             rootview.resources.getStringArray(R.array.kindoftask)[task.type].toString()
+        val correcttime: Calendar = timer.clone() as Calendar
+        correcttime.add(Calendar.MONTH, 1)
         holder.itemDate.text =
-            timer.get(Calendar.YEAR).toString() + ". " + timer.get(Calendar.MONTH).toString() + ". " + timer.get(Calendar.DAY_OF_MONTH).toString()
+            correcttime.get(Calendar.YEAR).toString() + ". " + correcttime.get(Calendar.MONTH).toString() + ". " + correcttime.get(Calendar.DAY_OF_MONTH).toString()
 
         //val minutes = if (task.minutes < 10) {
         //    "0" + task.minutes.toString()

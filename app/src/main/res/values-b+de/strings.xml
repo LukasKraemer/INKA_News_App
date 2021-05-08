@@ -67,4 +67,9 @@
 
     <string name="createAppointment">Termin erstellen</string>
     <string name="changeAppointment">Termin bearbeiten</string>
+
+
+    <string name="Notification_Appointment_type">Typ: %s</string>
+    <string name="Notification_date">Datum: %1$d.%2$d.%3$d</string>
+    <string name="Notification_time">Uhrzeit: %d : %d Uhr</string>
 </resources>
